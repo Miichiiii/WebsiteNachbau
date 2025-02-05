@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dienstleistungen - MyTrueKarma Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo"><a href="index.html">MyTrueKarma Marketplace</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <h1>Unsere Dienstleistungen</h1>
+    <div class="service-list">
+      <!-- Hier werden die Dienstleistungsangebote per PHP aus der Datenbank geladen -->
+      <?php
+      // Beispiel: Verbinden und alle Dienstleistungen anzeigen
+      require_once 'php/db.php';
+      $sql = "SELECT * FROM services ORDER BY created_at DESC";
+      $result = $conn->query($sql);
+      if ($result->num_rows > 0) {
+          while($row = $result->fetch_assoc()){
+              echo "<div class='service-card'>";
+              echo "<h3>" . htmlspecialchars($row['title']) . "</h3>";
+              echo "<p>" . htmlspecialchars($row['description']) . "</p>";
+              echo "<p class='price'>" . number_format($row['price'], 2, ',', '.') . " €</p>";
+              echo "</div>";
+          }
+      } else {
+          echo "<p>Derzeit sind keine Dienstleistungen verfügbar.</p>";
+      }
+      ?>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 MyTrueKarma Marketplace</p>
+    </div>
+  </footer>
+</body>
+</html>

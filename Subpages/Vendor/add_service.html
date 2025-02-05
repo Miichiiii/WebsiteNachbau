@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dienstleistung einstellen - MyTrueKarma Marketplace</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo"><a href="dashboard.html">MyTrueKarma Marketplace</a></div>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="list_services.html">Meine Angebote</a></li>
+          <li><a href="php/logout.php">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="container">
+    <h1>Dienstleistung einstellen</h1>
+    <form action="php/add_service.php" method="post" class="form">
+      <label for="title">Titel der Dienstleistung:</label>
+      <input type="text" id="title" name="title" required>
+      
+      <label for="description">Beschreibung:</label>
+      <textarea id="description" name="description" required></textarea>
+      
+      <label for="price">Preis (€):</label>
+      <input type="number" id="price" name="price" step="0.01" required>
+      
+      <button type="submit" class="btn">Dienstleistung einstellen</button>
+    </form>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 MyTrueKarma Marketplace</p>
+    </div>
+  </footer>
+</body>
+</html>
