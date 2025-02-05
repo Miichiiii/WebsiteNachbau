@@ -1,4 +1,4 @@
-/* Grund-Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     background-color: #f9f9f9;
 }
 
-/* Container */
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -20,7 +20,7 @@ body {
     padding: 20px;
 }
 
-/* Header */
+
 .site-header {
     background: #fff;
     padding: 15px 0;
@@ -66,13 +66,13 @@ nav ul li a.active {
     color: #e67e22;
 }
 
-/* Main Content */
+
 main {
     margin-top: 100px; /* Platz für den fixierten Header */
     padding: 20px 0;
 }
 
-/* Kontakt Hero Section */
+
 .contact-hero {
     text-align: center;
     padding: 40px 20px;
@@ -101,7 +101,7 @@ main {
     max-width: 400px;
 }
 
-/* Kontakt Details Section */
+
 .contact-details {
     background: #fff;
     padding: 30px;
@@ -131,7 +131,7 @@ main {
     color: #b00;
 }
 
-/* Kontakt Formular Section */
+
 .contact-form {
     background: #fff;
     padding: 30px;
@@ -181,7 +181,7 @@ main {
     background: #cf711f;
 }
 
-/* Footer */
+
 footer {
     background: #333;
     color: #fff;
