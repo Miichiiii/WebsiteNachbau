@@ -5,10 +5,10 @@
     box-sizing: border-box;
   }
   body {
-    font-family: Arial, sans-serif;
+    font-family: cursive;
     line-height: 1.6;
     color: #333;
-  }
+    }
   
   
   .container {
@@ -39,28 +39,8 @@
     font-weight: bold;
     color: #333;
   }
-  nav ul {
-    list-style: none;
-    display: flex;
-    align-items: center;
-  }
-  nav ul li {
-    margin: 0 10px;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-    transition: color 0.3s;
-  }
-  nav ul li a:hover {
-    color: #f39c12;
-  }
-  .search input {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+ 
+
   
   
   .hero {
@@ -447,6 +427,7 @@
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
+    transition: background-color 0.3s;
   }
   
   .button:hover {
@@ -510,7 +491,7 @@
   
   
   .flip-box-front {
-    background-color: #ffd13b;
+    background-color: #FFD700	;
     color: black;
     padding: 20px 0;
 
@@ -518,7 +499,7 @@
   
   
   .flip-box-back {
-    background-color: rgb(151, 180, 208);
+    background-color: #B8860B	;
     color: white;
     transform: rotateY(180deg);
   }

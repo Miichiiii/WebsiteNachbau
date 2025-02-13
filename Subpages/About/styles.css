@@ -357,8 +357,8 @@ footer .footer-nav ul li {
   }
   100% {
     width: 100%;
-    transform: scale(2); /* Skaliert auf das Doppelte */
-    opacity: 0;          /* Und verschwindet dabei */
+    transform: scale(1.5); /* Skaliert auf das Doppelte */
+    opacity: 0.5;          /* Und verschwindet dabei */
   }
 }
 
@@ -385,4 +385,31 @@ footer .footer-nav ul li {
 .section-fade.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.virtual-showroom .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.virtual-showroom iframe {
+  width: 80%; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+  border: none;
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #b3b3b3;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  
 }

@@ -7,26 +7,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-          <div class="logo">
-            <img src="/Element 1.png" alt="mytrueKarma Logo">
-        </div>
-          <nav>
-            <ul>
-              <li><a href="/home.html">Home</a></li>
-              <li><a href="/Subpages/projekte.html">Projekte & Transparenz</a></li>
-              <li><a href="/Subpages/shop.html">Shop</a></li>
-              <li><a href="/Subpages/Dienstleistungen/dienstleistungen.html">Dienstleistungen</a></li>
-              <li><a href="/Subpages/About/about.html">Über Uns</a></li>
-              <li><a href="/Subpages/Kontakt/kontakt.html">Kontakt</a></li>
-            </ul>
-          </nav>
-          <div class="search">
-            <input type="text" placeholder="Suche...">
-          </div>
-        </div>
-      </header>
+  <header>
+    <div class="header" style="display: flex; justify-content: space-between; align-items: center; background-color: #cfcfcf; padding: 20px 40px; color: white;">
+      <a href="/home.html" class="logo" style="font-size: 24px; font-weight: bold; text-decoration: none; color: white;">
+        <img src="/cropped-1.png" alt="mytrueKarma Logo" style="height: 50px;">
+      </a>
+      <nav style="display: flex; gap: 20px;">
+        <a href="/home.html" style="text-decoration: none; color: white; font-size: 16px; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">Home</a>
+        <a href="/Subpages/projekte.html" style="text-decoration: none; color: white; font-size: 16px; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">Projekte & Transparenz</a>
+        <a href="/Subpages/shop.html" style="text-decoration: none; color: white; font-size: 16px; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">Shop</a>
+        <a href="/Subpages/Dienstleistungen/dienstleistungen.html" style="text-decoration: none; color: white; font-size: 16px; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">Dienstleistungen</a>
+        <a href="/Subpages/About/about.html" style="text-decoration: none; color: white; font-size: 16px; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">Über Uns</a>
+        <a href="/Subpages/Kontakt/kontakt.html" style="text-decoration: none; color: white; font-size: 16px; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">Kontakt</a>
+      </nav>
+      <div class="search" style="position: relative;">
+        <input type="text" placeholder="Suche..." style="padding: 8px; font-size: 16px; border-radius: 5px; border: none; width: 200px;">
+      </div>
+    </div>
+  </header>
 
       
 
@@ -43,14 +41,14 @@
         <section class="values">
             <div class="value">
                 <h2>Transparenz</h2>
-                <p>100% Einblick in unser Engagement</p>
+                <p>Einblick in unser Engagement</p>
                 <div class="progress-bar">
                     <div class="progress" style="width: 100%;">100%</div>
                 </div>
             </div>
             <div class="value">
                 <h2>Sozial</h2>
-                <p>100% Gemeinsam für eine bessere Welt</p>
+                <p>Gemeinsam für eine bessere Welt</p>
                 <div class="progress-bar">
                     <div class="progress" style="width: 100%;">100%</div>
                 </div>
@@ -91,6 +89,7 @@
           <div class="container">
             <h2>Meet the Minds: Das Team von mytrueKarma</h2>
             <article class="team-member">
+              <img src="/CEO.png" alt="Michael Medvidov">
               <h3>Michael Medvidov</h3>
               <p>Hey, ich bin Michael Medvidov, der kreative Kopf hinter mytrueKarma. Modemacher mit ‘nem Twist – meine Mission? Style, der nicht nur gut aussieht, sondern auch die Welt ein bisschen besser macht. Hier geht’s nicht nur um Klamotten, sondern um einen Lifestyle mit Herz und Stil. Let’s spread good vibes!</p>
             </article>
@@ -104,22 +103,70 @@
             <p>Meine Mission, meine Leidenschaft, mein Weg.</p>
             <p>Unser Abenteuer endet hier nicht: Finde heraus, was noch kommt.</p>
             <div class="qa">
-              <h3>Wie bist du auf die Idee für mytrueKarma gekommen?</h3>
-              <p>Ich war schon immer davon überzeugt, dass Mode mehr sein kann als nur Stoff auf dem Körper. Die Idee, Mode mit sozialem Engagement zu verbinden, kam mir, als ich sah, wie sich Menschen für wohltätige Zwecke einsetzen, und ich erkannte das Potenzial, diese Dynamik auch in der Modebranche zu nutzen.</p>
-              <h3>Was hat dich inspiriert, eine Modemarke mit einem sozialen Engagement zu gründen?</h3>
-              <h3>Warum hast du dich entschieden, einen Teil der Erlöse an wohltätige Zwecke zu spenden?</h3>
-              <h3>Welche Herausforderungen hast du bei der Gründung von mytrueKarma erlebt?</h3>
-            </div>
+              <button class="accordion" style="background-color: #f1f1f1; border: none; color: #444; padding: 10px; width: 100%; text-align: center; cursor: pointer; font-size: 18px; margin: 5px 0; border-radius: 5px; transition: 0.4s;">
+                  Wie bist du auf die Idee für mytrueKarma gekommen?   ↓
+              </button>
+              <div class="panel" style="padding: 0 18px; display: none; background-color: #f1f1f1; overflow: hidden; border-left: 3px solid #ccc;">
+                  <p>Ich war schon immer davon überzeugt, dass Mode mehr sein kann als nur Stoff auf dem Körper. Die Idee, Mode mit sozialem Engagement zu verbinden, kam mir, als ich sah, wie sich Menschen für wohltätige Zwecke einsetzen, und ich erkannte das Potenzial, diese Dynamik auch in der Modebranche zu nutzen.</p>
+              </div>
+          
+              <button class="accordion" style="background-color: #f1f1f1; border: none; color: #444; padding: 10px; width: 100%; text-align: center; cursor: pointer; font-size: 18px; margin: 5px 0; border-radius: 5px; transition: 0.4s;">
+                  Was hat dich inspiriert, eine Modemarke mit einem sozialen Engagement zu gründen?   ↓
+              </button>
+              <div class="panel" style="padding: 0 18px; display: none; background-color: #f1f1f1; overflow: hidden; border-left: 3px solid #ccc;">
+                  <p>zweite Frage.</p>
+              </div>
+          
+              <button class="accordion" style="background-color: #f1f1f1; border: none; color: #444; padding: 10px; width: 100%; text-align: center; cursor: pointer; font-size: 18px; margin: 5px 0; border-radius: 5px; transition: 0.4s;">
+                  Warum hast du dich entschieden, einen Teil der Erlöse an wohltätige Zwecke zu spenden?   ↓
+              </button>
+              <div class="panel" style="padding: 0 18px; display: none; background-color: #f1f1f1; overflow: hidden; border-left: 3px solid #ccc;">
+                  <p>dritte Frage.</p>
+              </div>
+          
+              <button class="accordion" style="background-color: #f1f1f1; border: none; color: #444; padding: 10px; width: 100%; text-align: center; cursor: pointer; font-size: 18px; margin: 5px 0; border-radius: 5px; transition: 0.4s;">
+                  Welche Herausforderungen hast du bei der Gründung von mytrueKarma erlebt?   ↓
+              </button>
+              <div class="panel" style="padding: 0 18px; display: none; background-color: #f1f1f1; overflow: hidden; border-left: 3px solid #ccc;">
+                  <p>vierte Frage.</p>
+              </div>
+          </div>
+          
+          <script>
+              var acc = document.getElementsByClassName("accordion");
+              for (var i = 0; i < acc.length; i++) {
+                  acc[i].addEventListener("click", function() {
+                      this.classList.toggle("active");
+                      var panel = this.nextElementSibling;
+                      if (panel.style.display === "block") {
+                          panel.style.display = "none";
+                      } else {
+                          panel.style.display = "block";
+                      }
+                  });
+              }
+          </script>
+          
           </div>
         </section>
     
+        <!-- Virtual Showroom -->
+        <section class="virtual-showroom">
+          <div class="container">
+            <h2>Virtual Showroom</h2>
+            <p>Erlebe unsere Kollektion in einem virtuellen Showroom. <a  href="https://www.spatial.io/s/Karmaland-64df6866d583eb4cb2839e81?share=203332892411089258"> Klicke hier</a>, um den Showroom zu betreten.</p>
+        <iframe src="https://www.spatial.io/s/Karmaland-64df6866d583eb4cb2839e81?share=203332892411089258" 
+        style="width: 100%; height: 578px; border: none; border-radius: 100px 20%; margin-top: 20px;"></iframe>
+</iframe>
+
+<br>
         <!-- Design Team -->
         <section class="design-team">
           <div class="container">
             <h2>Die kreativen Köpfe hinter den Designs</h2>
             <div class="team-members">
               <div class="member">
-                <h3>Sara Jane G.</h3>
+                <h3>Sara Jane Gupton</h3>
                 <p class="role">Designerin</p>
                 <p>Sara ist die erste Designerin, die für uns das Design der "Hamza Hand" entworfen hat. Vielen Dank für diese großartige erste Zusammenarbeit. Wir freuen uns auf eine vielversprechende Zukunft und weitere erfolgreiche Kooperationen!</p>
                 <a href="#" class="btn">Artworks ansehen</a>
