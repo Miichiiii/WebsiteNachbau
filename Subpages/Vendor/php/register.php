@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+use YourNamespace\Db;
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name     = $conn->real_escape_string($_POST['name']);
@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
     $sql = "INSERT INTO vendors (name, email, password) VALUES ('$name', '$email', '$password')";
     
-    if ($conn->query($sql) === TRUE) {
+    if ($conn->query($sql) === true) {
         header("Location: ../login.html");
         exit;
     } else {
