@@ -31,9 +31,14 @@
       
   
   <main>
+    
       <section class="our-mission">
         <div class="container">
-          <h1>Wer wir sind & unsere Mission</h1>
+          <h1>
+            <span class="word">Wer wir sind</span>
+            <span class="word">& unsere Mission</span>
+          </h1>
+          <br>
           <p>Wir sind eine Modemarke mit einem einzigartigen Ansatz. Denn wir sind mehr als nur ein Label – wir sind eine Bewegung, die die Welt der Mode neu definiert. Gegründet 2021 in Düsseldorf, setzen wir auf stilvolle Designs und eine innovative Vision.</p>
           <p>Wir glauben an Transparenz, Nachhaltigkeit und soziales Engagement als Grundpfeiler unseres Unternehmens.</p>
         </div>
@@ -134,8 +139,8 @@
         
         <script>
             var acc = document.getElementsByClassName("accordion");
-            for (var i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
+            for (var element of acc) {
+                element.addEventListener("click", function() {
                     this.classList.toggle("active");
                     var panel = this.nextElementSibling;
                     if (panel.style.display === "block") {
