@@ -6,7 +6,7 @@
 
 
 - 🛍 **Multi-Vendor Shop** – Händler können ihre Produkte einfach verwalten und verkaufen.  
-- 📊 **Transparenz-Interface** – Klare Produkt- und Händlerinformationen für Kunden.  
+- 📊 **Transparenz-Interface** – Klare Ertrag & Transaktion- Produkt- und Händlerinformationen für Kunden.  
 - 🔍 **Erweiterte Suche & Filter** – Intuitive Navigation für ein optimales Einkaufserlebnis.  
 - 📦 **Bestell- und Liefertracking** – Kunden behalten ihre Bestellungen jederzeit im Blick.  
 - 🔐 **Sichere Zahlungsabwicklung** – Unterstützung für gängige Zahlungsmethoden.  
