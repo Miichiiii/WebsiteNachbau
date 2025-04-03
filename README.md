@@ -21,7 +21,7 @@
 ## 📌 Installation
 
 ```sh
-git clone https://github.com/dein-benutzername/mytruekarma.com.git
-cd mytruekarma.com
+git clone https://github.com/Miichiiii/WebsiteNachbau.git
+cd WebsiteNachbau
 npm install
 npm start
